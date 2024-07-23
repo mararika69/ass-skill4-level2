@@ -15,13 +15,13 @@
     border: 1px solid #ddd;
     padding: 15px;
     text-align: left;
-    border: 1px solid #47c16a;
+    border: 1px solid #965bc1;
     font-size: 16px;
 
   }
   
   th {
-    background-color:#72cf8d;
+    background-color:#9672cf;
     color: white;
     font-weight: bold;
     position: sticky;
@@ -38,7 +38,7 @@
   }
   
   td:last-child {
-    color: #009A2B;
+    color: #6a438a;
     cursor: pointer;
   }
   .box-dropdown{
@@ -48,12 +48,12 @@
     padding: 18px; 
   }
   select{
-    background-color: #49c66d;
+    background-color: #7752af;
     padding: 10px;
     width: 100px;
     color: white;
     border-radius: 5px;
-    border: 1px solid #009A2B;
+    border: 1px solid #6d4a92;
     cursor: pointer;
     font-size: 17px;
     align-items: center;

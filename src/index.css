@@ -146,7 +146,7 @@ i {
 
 #sidebar li {
   margin: 0.25rem 0;
-  border: solid 1px #0c792b;
+  border: solid 1px #7c51aa;
   border-radius: 5px;
 
 
@@ -172,14 +172,14 @@ i {
 }
 
 #sidebar nav a.active {
-  background: #47c16a;
+  background: #785dbb;
   color: white;
 
 
 }
 
 #sidebar nav a.pending {
-  color:#47c16a;
+  color:#7847c1;
 }
 
 #detail {
@@ -325,7 +325,7 @@ i {
   background-color: #ddf1e2;
   border-bottom: 1px solid #ccc;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgb(5, 84, 33);
+  border: 1px solid rgb(62, 42, 158);
   width: 100%;
   margin: 0 auto;
   border-radius: 10px;
@@ -336,7 +336,7 @@ i {
 
 .title {
   font-size: 25px;
-  color: #3b8d3e;
+  color: #3b4a8d;
   font-weight: 400;
 }
 

@@ -8,7 +8,7 @@ function useFarmlands() {
   useEffect(() => {
     const fetchFarmlands = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/farmlands`);
+        const response = await fetch('https://agro-admin-dashboard-api.vercel.app/api/crops?crop_type_id=1');
         const data = await response.json();
         setFarmlands(data);
       } catch (error) {
@@ -43,24 +43,20 @@ function Farmland() {
       <table>
         <thead>
           <tr>
+            <th>No</th>
             <th>ID</th>
-            <th>Size</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Farmer (owner)</th>
-            <th>Status</th>
-            <th>Active</th>
+            <th>Name</th>
+            <th>Type Name</th>
+            <th>Owner</th>
           </tr>
         </thead>
         <tbody>
           {filteredFarmlands.map((farmland, index) => (
             <tr key={farmland.id}>
+              <td>{index + 1}</td>
               <td>{farmland.id}</td>
-              <td>{farmland.size}</td>
-              <td>{farmland.latitude}</td>
-              <td>{farmland.longitude}</td>
-              <td>{farmland.farmer_id}</td>
-              <td>{farmland.status}</td>
+              <td>{farmland.name}</td>
+              <td>{farmland.crop_type.name}</td>
               <td>Edit</td>
             </tr>
           ))}

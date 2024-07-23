@@ -18,7 +18,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
-  background-color: #4CAF50;
+  background-color: #724caf;
   padding: 1rem;
 }
 
@@ -48,10 +48,10 @@ span {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  border: 2px solid #4CAF50;
+  border: 2px solid #684caf;
   width: 500px;
   margin-left: 10px;
-  background-color: #ebf0ebcf;
+  background-color: palevioletred;
 }
 
 .dashboard-stat h3 {
@@ -75,7 +75,7 @@ main table {
 tr,
 th,
 td {
-  border: 2px solid #009A2B;
+  border: 2px solid #634f9e;
   padding: 8px;
   font-size: 12px
 };

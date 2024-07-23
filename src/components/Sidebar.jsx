@@ -7,19 +7,10 @@ function Sidebar() {
       <nav>
         <ul>
           <li>
-            <NavLink to="/dashboard">Dashboard</NavLink>
+            <NavLink to="/farmers">Crop</NavLink>
           </li>
           <li>
-            <NavLink to="/farmers">Farmers</NavLink>
-          </li>
-          <li>
-            <NavLink to="/farmlands">Farmlands</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Cropcycle">Crop Cycle</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Account">Account</NavLink>
+            <NavLink to="/farmlands">Crop Type</NavLink>
           </li>
         </ul>
       </nav>

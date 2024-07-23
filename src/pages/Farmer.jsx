@@ -13,7 +13,7 @@ function Farmers() {
   useEffect(()=>{
     const fetchFarmers=async()=>{
       try{
-      const response = await fetch(`${API_BASE_URL}/farmers`);
+      const response = await fetch('https://agro-admin-dashboard-api.vercel.app/api/crops');
       const data = await response.json();
       setFarmers(data);
       return response.data
@@ -38,27 +38,17 @@ function Farmers() {
           <tr>
             <th>No</th>
             <th>IDCard</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Gender</th>
-            <th>Phone</th>
-            <th>Source</th>
-            <th>Province</th>
-            <th>Active</th>
+            <th>Name</th>
+            <th>Type Name</th>
           </tr>
         </thead>
         <tbody>
           {farmers.map((farmer, index) => (
             <tr key={farmer.id}>
               <td>{index + 1}</td>
-              <td>{farmer.id_card}</td>
-              <td>{farmer.first_name}</td>
-              <td>{farmer.last_name}</td>
-              <td>{farmer.gender}</td>
-              <td>{farmer.phone}</td>
-              <td>{farmer.source}</td>
-              <td>{farmer.district_id}</td>
-              <td>Edit</td>
+              <td>{farmer.id}</td>
+              <td>{farmer.name}</td>
+              <td>{farmer.crop_type.name}</td>
             </tr>
           ))}
         </tbody>
